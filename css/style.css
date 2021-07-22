@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/dm-sans-v6-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/dm-sans-v6-latin-700.woff2);
+}
+
+body {
+  background-color: #32302F;
+  color: #D4BE98;
+  font-family: 'DM Sans';
+}
+
+h1 {
+  color: #d3869b;
+}
+
+button {
+  background-color: #a9b665;
+  color: #fbf7f5;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
