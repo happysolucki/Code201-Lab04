@@ -14,6 +14,7 @@ const listEntries = function listAllEntries(list) {
   });
   return listing;
 }
+
 // questions that want a yes confirmation
 const confirmYes = function preferYesConfirmation(question) {
   let guess = prompt(question).toUpperCase();
@@ -26,7 +27,7 @@ const confirmYes = function preferYesConfirmation(question) {
   }
 }
 
-// questions that want a yes confirmation
+// questions that want a no confirmation
 const confirmNo = function preferNoConfirmation(question) {
   let guess = prompt(question).toUpperCase();
   if (guess === 'N' || guess === 'NO') {
