@@ -79,7 +79,7 @@ const confirmFriend = function confirmFriendName(question) {
         } else {
           attempts--;
           if (attempts === 0) {
-            alert(`Sorry! You're out of attempts.\nAny name from this list would have been correct: ${listEntries(friends)}`);
+            alert(`Sorry! You're out of attempts.\nAny name from this list would have been correct:\n${listEntries(friends)}`);
           } else {
             guess = prompt(`Incorrect guess. Try again.\n${question}\nAttempts left: ${attempts}`);
           }
