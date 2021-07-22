@@ -73,7 +73,7 @@ const confirmFriend = function confirmFriendName(question) {
     // check if guess matches an entry in friends array. if it does, filter those into result
     let result = friends.filter((name) => name.toUpperCase().includes(guess));
     // if result contains a value, there's a match
-    if (result.length > 0) {
+    if (result.length > 0 && guess !== '') {
           alert(`Correct!\nYou could've entered any name in this list:\n${listEntries(friends)}`);
           return 1;
         } else {
