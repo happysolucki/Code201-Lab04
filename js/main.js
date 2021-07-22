@@ -66,13 +66,13 @@ const confirmNum = function confirmRandomNumber(question) {
 
 // question that asks for one of my friend's name
 const confirmFriend = function confirmFriendName(question) {
-  let guess = prompt(question).toUpperCase();
+  let guess = prompt(question);
   const friends = ['Javion', 'Cameron', 'Brandon', 'Samira', 'Naomi', 'Peyton'];
   let attempts = 6;
   while (attempts !== 0) {
     // check if guess matches an entry in friends array. if it does, filter those into result
-    let result = friends.filter((name) => name.toUpperCase().includes(guess));
-    // if result contains a value, there's a match
+    let result = friends.filter(name => name.toUpperCase().includes(guess.toUpperCase()));
+    // if result contains a value & guess isn't an empty string, there's a match
     if (result.length > 0 && guess !== '') {
           alert(`Correct!\nYou could've entered any name in this list:\n${listEntries(friends)}`);
           return 1;
