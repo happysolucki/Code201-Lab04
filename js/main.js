@@ -43,7 +43,6 @@ const confirmNo = function preferNoConfirmation(question) {
 const confirmNum = function confirmRandomNumber(question) {
   let guess = parseInt(prompt(question));
   let randNum = Math.floor(Math.random() * 20 + 1);
-  console.log(randNum);
   let attempts = 4;
   while(attempts !== 0) {
     if (guess === randNum) {
