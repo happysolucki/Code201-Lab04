@@ -22,10 +22,21 @@ h1 {
   color: #d3869b;
 }
 
+h3 {
+  color: #7daea3;
+}
+
+h3:first-of-type {
+  color: #89b482;
+}
+
 button {
   background-color: #a9b665;
-  color: #fbf7f5;
+  color: #3e453e;
   border: none;
+  outline: none;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  font-family: 'DM Sans';
+  font-weight: bold;
 }
