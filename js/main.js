@@ -48,9 +48,7 @@ const confirmNum = function confirmRandomNumber(question) {
   while(attempts !== 0) {
     if (guess === randNum) {
       alert("Correct!");
-      // correctGuesses++;
       return 1;
-      // attempts = 0;
     } else {
       attempts--;
       if (attempts === 0) {
